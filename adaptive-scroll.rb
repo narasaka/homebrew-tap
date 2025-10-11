@@ -6,11 +6,11 @@ class AdaptiveScroll < Formula
   version "v0.0.10"
 
   def install
-    bin.install "adaptive_scroll"
+    bin.install "adaptive-scroll"
   end
 
   service do
-    run [opt_bin/"adaptive_scroll"]
+    run [opt_bin/"adaptive-scroll"]
     keep_alive true
     run_at_load true
   end
