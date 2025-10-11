@@ -15,7 +15,8 @@ class AdaptiveScroll < Formula
     run_at_load true
   end
 
-  <<~EOS
+  def caveats
+    <<~EOS
       Accessibility Permission Required:
 
       Adaptive Scroll uses macOS's event system to modify scroll direction.
@@ -32,4 +33,5 @@ class AdaptiveScroll < Formula
       To stop the service:
         brew services stop adaptive-scroll
     EOS
+  end
 end
