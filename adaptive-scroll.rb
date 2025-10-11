@@ -17,7 +17,7 @@ class AdaptiveScroll < Formula
 
   def caveats
     <<~EOS
-      Accessibility Permission Required:
+      Accessibility Permission Required!
 
       Adaptive Scroll uses macOS's event system to modify scroll direction.
       You must grant it Accessibility access for it to function.
