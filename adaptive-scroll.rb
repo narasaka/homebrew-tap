@@ -14,4 +14,22 @@ class AdaptiveScroll < Formula
     keep_alive true
     run_at_load true
   end
+
+  <<~EOS
+      Accessibility Permission Required:
+
+      Adaptive Scroll uses macOS's event system to modify scroll direction.
+      You must grant it Accessibility access for it to function.
+
+      To start the service:
+        brew services start adaptive-scroll
+
+      Once that is running, you need to enable permissions. Go to:
+        System Settings -> Privacy & Security -> Accessibility
+
+      Enable the toggle / switch for `adaptive-scroll`
+
+      To stop the service:
+        brew services stop adaptive-scroll
+    EOS
 end
