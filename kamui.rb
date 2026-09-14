@@ -1,8 +1,8 @@
 class Kamui < Formula
   desc "Use a remote SSH host's loopback services in a development browser"
   homepage "https://github.com/narasaka/kamui"
-  url "https://github.com/narasaka/kamui/archive/refs/tags/v0.0.8.tar.gz"
-  sha256 "fab0421f4d8a403deafeec351bf78ce4c581f2f480e116fb560da8b8282c95cf"
+  url "https://github.com/narasaka/kamui/archive/refs/tags/v0.0.9.tar.gz"
+  sha256 "ebea688134ed610eb78060962f05042c113778bc5fa47fdf720db0376b778a02"
   license "MIT"
 
   depends_on "go" => :build
@@ -10,8 +10,8 @@ class Kamui < Formula
   def install
     ldflags = "-buildid= " \
               "-X github.com/narasaka/kamui/internal/version.Version=#{version} " \
-              "-X github.com/narasaka/kamui/internal/version.Commit=467dec432d5ef79f1ba16daea7ee861aacd68cf0 " \
-              "-X github.com/narasaka/kamui/internal/version.BuildDate=2026-09-14T00:28:14-04:00"
+              "-X github.com/narasaka/kamui/internal/version.Commit=317e1c57610c35e9c304968074a17eddbf3b0dea " \
+              "-X github.com/narasaka/kamui/internal/version.BuildDate=2026-09-14T13:40:34-04:00"
     system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/kamui"
   end
 
