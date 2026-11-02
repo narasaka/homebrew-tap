@@ -1,6 +1,6 @@
 cask "kamui-app" do
-  version "0.0.13"
-  sha256 "59ce05e8fa74c1b9c2684361f9c002864b8105c92d976f4026b7b4c9ce72bf9a"
+  version "0.0.14"
+  sha256 "0b358d7bd79ae8539b5e0dd38cc0c1c873764d11bf94c043740a15792535d489"
 
   url "https://github.com/narasaka/kamui/releases/download/v#{version}/Kamui_#{version}_macos.zip"
   name "Kamui"
